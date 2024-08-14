@@ -1,4 +1,5 @@
 const jsonwebtoken = require('jsonwebtoken');
+const { JWT_KEY } = require('../config/JWT_SECRET_KEY');
 
 module.exports.authMiddleware = (req, res, next) => {
     let token = req.headers['my-token'];
